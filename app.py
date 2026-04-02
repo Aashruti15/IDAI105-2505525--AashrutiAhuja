@@ -175,11 +175,11 @@ if not st.session_state.logged_in:
     _, col, _ = st.columns([1, 1.5, 1])
     with col:
         st.title("🛍️ Black Friday Analytics")
-        st.write("Sign in to access the dashboard.")
+        st.write("Sign up to access the dashboard.")
         with st.form("login"):
             u  = st.text_input("Username")
             pw = st.text_input("Password", type="password")
-            if st.form_submit_button("Sign in", use_container_width=True):
+            if st.form_submit_button("Sign up", use_container_width=True):
                 if u.strip() and pw.strip():
                     st.session_state.logged_in = True
                     st.session_state.username  = u.strip()
